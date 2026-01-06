@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TweetNest </title>
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <!-- Left Sidebar -->
+    <div class="left">
+        <div class="logo">
+            <img src="logo.png" alt="">
+            <span class = "brand name">TweetNest</span>
+        </div>
+        
+        <p>🏳️Home</p>
+        
+        
+        <p>🔔Notifications</p>
+        <p>💭Messages</p>
+        <p>+ Create</p>
+        <p>⚙️Settings</p>
+         <p>LogOut</p>
+    </div>
+
+    <div class="middle">
+    
+    <input type="text"
+    class="middle-search" 
+    placeholder="🔍Search">
+
+        <div class="post">
+        <p class="post-user">👤user 1</p>
+        <p class="post-text">This is my first post on TweetNest!</p>
+        
+        <button class="like-btn" onclick="toggleLike(this)">
+            ❤️ Like
+        </button>
+ <!-- Comment section -->
+    <div class="comment-section">
+        <input type="text" class="comment-input" placeholder="Add a comment">
+        <button class="comment-btn" onclick="addComment(this)">Post</button>
+
+        <div class="comments"></div>
+    </div>
+            
+        </div>
+        <div class="post">
+        <p class="post-user">👤user2</p>
+        <p class="post-text">hello</p>
+        
+        <button class="like-btn" onclick="toggleLike(this)">
+            ❤️ Like
+        </button>
+ <!-- Comment section -->
+    <div class="comment-section">
+        <input type="text" class="comment-input" placeholder="Add a comment">
+        <button class="comment-btn" onclick="addComment(this)">Post</button>
+
+        <div class="comments"></div>
+    </div>
+            
+        </div>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div class="right">
+         <p class="right-user">👤User ID/ Name </p>
+          <hr class="right-divider">
+       <h4 class="right-heading">Suggestions For You</h4>   
+       <p class="suggestion">👤user1</p>
+       <p class="suggestion">👤user2</p>
+    <p class="suggestion">👤user3</p>
+
+    </div>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
